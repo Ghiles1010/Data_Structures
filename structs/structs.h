@@ -35,6 +35,8 @@ typedef struct Node_BST{
 typedef struct Binary_Search_Tree{
 
     struct Node_BST *root;
+    int height;
+    int last_row_size;
 
 }Binary_Search_Tree;
 

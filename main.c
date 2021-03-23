@@ -11,13 +11,20 @@ int main(){
 
     initalize_BST(&BST);
 
-    insert_BST(&BST, 5);
-    insert_BST(&BST, 4);
-    insert_BST(&BST, 10);
-    insert_BST(&BST, 2);
-    insert_BST(&BST, 2);
+
+
+    for(int i = 0; i < 15; i++){
+
+        insert_BST(&BST, rand()%10);
+    }
+
+
 
     print_infixe_BST(BST);
+
+    print_BST(BST);
+
+    printf("\n Height : %d\n Last: %d", BST.height, BST.last_row_size);
 
 
 	return 0;
